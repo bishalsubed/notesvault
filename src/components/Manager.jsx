@@ -199,7 +199,7 @@ const Manager = () => {
 
             <section className="text-gray-700 body-font">
                 <div className="container px-6 py-10 mx-auto">
-                    {noteArray.length === 0 && <div className='text-xl font-semibold flex justify-center'> Add Notes To Visualize!</div>}
+                    {noteArray.length === 0 && <div className='text-xl font-semibold flex justify-center'> Add Notes and Click On All Notes button To Visualize!</div>}
                     {noteArray.length != 0 && <div className="flex flex-wrap -m-4 gap-24 justify-center">
                         {noteArray.map((item, index) => {
                             return (showFavourite || item.isFavourite) && <div key={index} className="p-1 md:w-1/3">
