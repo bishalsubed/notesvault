@@ -202,7 +202,7 @@ const Manager = () => {
                     {noteArray.length === 0 && <div className='text-xl font-semibold flex justify-center'> Add Notes and Click On All Notes button To Visualize!</div>}
                     {noteArray.length != 0 && <div className="flex flex-wrap -m-4 gap-24 justify-center">
                         {noteArray.map((item, index) => {
-                            return (showFavourite || item.isFavourite) && <div key={index} className="p-1 md:w-1/3">
+                            return (!showFavourite || item.isFavourite) && <div key={index} className="p-1 md:w-1/3">
                                 <div className="h-full border-2 border-gray-400 border-opacity-70 rounded-lg overflow-hidden">
                                     <div className="py-1">
                                         <div className='flex justify-center'>
